@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main_box {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(photo.jpg);
+  background-size: cover;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -301px;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.2s linear 0s;
+}
+.btn_one {
+  color: white;
+  font-size: 1.6em;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  line-height: 50px;
+  font-size: 1.6em;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  cursor: not-allowed;
+}
+.fa-xmark {
+  margin-right: 10px;
+  color: white;
+}
+.fa-xmark:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+
+  transition: all 0.15s linear 0s;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: baseline;
+  font-size: 1.3em;
+}
+.content {
+  line-height: 60px;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.content:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.content i {
+  margin-left: 20px;
+}
+.content a {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+  justify-self: center;
+}
+input {
+  display: none;
+}
+.social_media {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  line-height: 60px;
+}
+.social_media a {
+  padding: 0 12px;
+  line-height: 60px;
+  font-size: 1.3em;
+  color: white;
+  opacity: 0.6;
+}
+.fa-facebook {
+  color: skyblue;
+}
+.fa-twitter {
+  color: aqua;
+}
+.fa-instagram {
+  color: #e1306c;
+}
+.fa-youtube {
+  color: #f00;
+}
+
+.social_media a i:hover {
+  opacity: 1;
+  transform: scale(1.5, 1.5);
+  transition: all 0.3s linear 0s;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+  transition: all 0.2s linear 0s;
+}
+#check:checked + .btn_one {
+  opacity: 0;
+}
+@media (max-width: 620px) {
+  .sidebar_menu {
+    max-width: 220px;
+  }
+  .social_media {
+    left: 20px;
+  }
+  .main_box {
+    background-position: center;
+  }
+}
