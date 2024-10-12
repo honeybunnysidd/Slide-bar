@@ -1,6 +1,6 @@
 # CSS-Mini-Project
 
-## A Simple Slide bar with responsiveness for practices basics.
+## A Simple Slide bar with responsiveness for basics practice .
 
 ## Technologies used :
    1. HTML
