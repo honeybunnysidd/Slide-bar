@@ -1,5 +1,9 @@
 # CSS-Mini-Project
 
+
+<div align="center">
+<img src="photo.jpg" width="100" height="auto">
+</div>
 ## A Simple Slide bar with responsiveness for basic practice .
 
 ## Technologies used :
